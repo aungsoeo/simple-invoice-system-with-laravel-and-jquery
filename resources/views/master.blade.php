@@ -1,11 +1,12 @@
 <html>
 <head>
 		<meta charset="UTF-8">
-	<title>Laravel Example</title>
+ <title>Invoices Application</title>
 	<link rel="stylesheet" type="text/css" href="<?= URL::asset('css/bootstrap.min.css') ?>">
 	<script type="text/javascript" src="<?= URL::asset('js/app.js') ?>"></script>
 	<script type="text/javascript" src="<?= URL::asset('js/vue.min.js') ?>"></script>
-</head> 
+	<script type="text/javascript" src="<?= URL::asset('js/jquery.js') ?>"></script>
+</head>
 <body>
 <section class="content">
 

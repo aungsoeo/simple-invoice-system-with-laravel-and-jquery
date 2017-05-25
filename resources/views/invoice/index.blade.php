@@ -7,7 +7,7 @@
 	<title></title>
 </head>
 <body>
-	<a href="<?= 'productform' ?>" class="btn btn-primary" align="right">Add Product</a>
+	<a href="<?= 'invoicemain' ?>" class="btn btn-success" align="right" style="margin-left:20%;margin-bottom:20px;margin-top:20px">Back</a>
 	<table class = 'table table-bordered table-hover' style="width:1000px;margin-left:10%;margin-right:10%">
 <thead>
 <th>ProductID</th>
@@ -20,7 +20,7 @@
 
 </thead>
 <tbody>
-<?php 
+<?php
 foreach($data as $row){
 ?>
 <tr>
@@ -32,8 +32,8 @@ foreach($data as $row){
 <td><?php echo $row->grandtotal ?></td>
 
 <td>
-    <a href='<?php echo 'EditProduct/'. $row->id ?>'>Edit</a> |
-    <a href='<?php echo 'DeleteProduct/'.$row->id ?>'>Delete</a>
+    <a href='<?php echo 'EditProduct/'. $row->id ?>' class="btn btn-success">Edit</a>
+    <a href='<?php echo 'DeleteProduct/'.$row->id ?>'class="btn btn-danger">Delete</a>
 </td>
 </tr>
 <?php } ?>
@@ -50,6 +50,6 @@ foreach($data as $row){
         </div>
         @endif
     </div>
+
 </body>
 </html>
-

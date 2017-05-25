@@ -43,7 +43,7 @@ return [
             'driver' => 'mysql',
             'host' => 'localhost',
             'port' => 3306,
-            'database' => 'laravel',
+            'database' => 'invoice_system_db',
             'username' => 'root',
             'password' => '',
             'charset' => 'utf8',
@@ -53,7 +53,7 @@ return [
             'engine' => null,
         ],
 
-        
+
 
 
         'pgsql' => [

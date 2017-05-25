@@ -1,29 +1,18 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-Route::get('productmain','ProductController@main');
-Route::get('productindex','ProductController@index');
-Route::get('productform','ProductController@form');
 
-// Route::get('productform1','ProductController@form1');
-// Route::post('store','ProductController@store');
+Route::get('/','InvoicesController@show');
+Route::get('index','InvoicesController@index');
+Route::get('show','InvoicesController@show');
+Route::get('create','InvoicesController@insert');
 
-Route::post('save','ProductController@save');
-Route::post('search','ProductController@search');
-Route::get('EditProduct/{id}','ProductController@edit');
-Route::post('update','ProductController@update');
-Route::get('DeleteProduct/{id}','ProductController@delete');
+Route::post('save','InvoicesController@save');
+Route::post('search','InvoicesController@search');
+Route::get('edit/{id}','InvoicesController@edit');
+Route::get('pdf/{id}','InvoicesController@printt');
 
-Route::get('productadd','ProductController@addmore');
-Route::post('add','ProductController@store');
-Route::resource('invoices', 'InvoicesController');
+Route::post('update','InvoicesController@update');
+Route::get('Deleteinvoice/{id}','InvoicesController@delete');
 
+Route::get('invoiceadd','InvoicesController@add');
+Route::post('add','InvoicesController@store');
